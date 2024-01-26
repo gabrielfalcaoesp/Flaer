@@ -1,24 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+
 body {
     height: 400vh;
     margin: 0;
 }
 
-.inicial
-{
+.inicial {
+    position: relative;
     height: 200vh;
     background-color: rgb(36, 33, 33);
 }
 
+.fundo {
+    position: relative;
+}
+
 .imagem {
-    padding: 0px;
-    margin: 0;
-    height: 90vh; 
+    height: 90vh;
 }
 
 .imagem img {
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
     width: 90%;
+    height: 100%;
+    object-fit: cover; /* Isso fará a imagem cobrir completamente o contêiner */
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%);
+}
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.slogan1 p {
+    color: rgb(16, 15, 99);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-family: "Aldrich", sans-serif;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.slogan2 p {
+    color: rgb(16, 15, 99);
+    padding-top: 0px;
+    margin-top: 0px;
+    font-family: "Aldrich", sans-serif;
+    font-style: normal;
+    font-size: 70px;
 }
