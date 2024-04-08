@@ -1,312 +1,1938 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-
-header {
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 2vh;
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 1vh;
-    z-index: 2; 
-}
-
-
-nav a {
-    float: left;
-    display: block;
-    color: rgb(16, 15, 99);
-    text-align: center;
-    padding: 2vh 6.5vh;
-    text-decoration: none;
-    transition: transform 0.3s; 
-}
-
-nav a:hover {
-    transform: scale(1.3); 
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-.inicial {
-    position: relative;
-    height: 100vh;
-    background-color: rgb(36, 33, 33);
-    margin: 0px;
-    padding: 0px;
-}
-
-.fundo {
-    position: relative;
-}
-
-.imagem {
-    height: 90vh;
-}
-
-.imagem img {
-    width: 90%;
-    height: 100%;
-    object-fit: cover; /* Isso fará a imagem cobrir completamente o contêiner */
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%);
-}
-
-.slogan {
-    position: absolute;
-    top: 50%;
-    left: 22.5%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-
-
-.slogan1 p {
-    color: rgb(16, 15, 99);
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    font-family: "Aldrich", sans-serif;
-    font-style: normal;
-    font-size: 50px;
-}
-
-.slogan2 p {
-    color: rgb(16, 15, 99);
-    padding-top: 0px;
-    margin-top: 0px;
-    font-family: "Aldrich", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 70px;
-}
-
-
-
-
-
-.sobre
-{
-    margin-top: 0px;
-    background-color: rgb(36, 33, 33);
-    width: 100%;
-    height: 100vh;
-}
-
-.titulo
-{
-height: 10%;
-margin-top: 0px;
-padding-top: 0px;
-border: 1px solid rgb(36, 33, 33);
-}
-
-.titulo p
-{
-    color: rgb(255, 255, 255);
-    font-family: "Aldrich", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 70px;
-    margin-left: 10vh;
-}
-
-.conteudoSobre {
-    margin-top: 10vh;
-    margin-left: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    height: 75vh;
-    padding: 10px; /* Adicione um preenchimento para manter uma margem interna */
-    box-sizing: border-box; /* Garante que o preenchimento não afete a largura total */
-}
-
-.texto1 {
-    position: relative;
-    top: 0; 
-    left: 0; 
-    width: 80vh;
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.texto1 p
-{
-    color: rgb(255, 255, 255);
-    font-family: "Aldrich", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 35px;
-    text-align: center;
-    margin: 0; 
-}
-
-.conteudoSobre2 {
-    position: relative;
-    top: 0; 
-    left: 0vh; 
-    width: 80vh;
-    height: 65vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.texto2
-{
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-}
-
-.texto2 p
-{
-    color: rgba(170, 170, 170, 0.623);
-    font-family: "Aldrich", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 35px;
-    text-align: center;
-    margin: 0; 
-}
-
-.imagemSobre
-{
-    width: 100%;
-    height: 45vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.imagemSobre img {
-    height: 100%;
-    width: 60%;
-}
-
-.carousel-container {
-    width: 80%;
-    height: 95%;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .carousel-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    transition: transform 1.25s ease-in-out;
-  }
-  
-  .carousel-slide {
-    height: 95%;
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 1200px) {
+    header {
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 2vh;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1vh;
+        z-index: 2; 
+    }
     
-  }
-  
-  .carousel-slide img {
-    width: 50%;
-    height: auto;
-  }
-  
-  .carousel-btn {
+    
+    nav a {
+        -webkit-text-stroke: 0.2px #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        float: left;
+        display: block;
+        color: rgb(153, 180, 229);
+        text-align: center;
+        padding: 2vh 6.5vh;
+        text-decoration: none;
+        transition: transform 0.3s; 
+        font-size: 2.5vh;
+    }
+    
+    nav a:hover {
+        transform: scale(1.3); 
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .inicial {
+        position: relative;
+        height: 100vh;
+        background-color: rgb(36, 33, 33);
+        margin: 0vh;
+        padding: 0vh;
+    }
+    
+    .fundo {
+        position: relative;
+    }
+    
+    .imagem {
+        height: 90vh;
+    }
+
+    .imagem2 {
     position: absolute;
-    transform: translateY(-50%);
-    font-size: 24px;
-    background: transparent;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  #prevBtn {
-    left: 10px;
-  }
-  
-  #nextBtn {
-    right: 10px;
-  }
-  
+    top: 40vh;
+    left: 18vh;
+    width: 25%;
+    height: 50%;
+}
 
-
-
-
-
-
-
-
-.produtos
-{
-    margin-top: 0px;
-    background-color: rgb(36, 33, 33);
+    .imagem2 img{
+        width: 50vh;
+        height: 50vh;
+    }
+    
+    
+    .imagem img {
+        width: 95%;
+        height: 90vh;
+        object-fit: cover; 
+        clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%);
+    }
+    
+    .slogan {
+        position: absolute;
+        top: 35vh;
+        left: 45vh;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+    }
+    
+    
+    .slogan1 p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        color: rgb(97, 114, 146);
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        font-family: "Aldrich", sans-serif;
+        font-style: normal;
+        font-size: 7.5vh;
+    }
+    
+    .slogan2 p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        color: #fff;
+        color: rgb(153, 180, 229);
+        padding-top: 0px;
+        margin-top: 0px;
+        font-family: "Aldrich", sans-serif;
+        font-size: 10vh;
+    }
+    
+    
+    
+    
+    
+    .sobre
+    {
+        margin-top: 0px;
+        background-color: rgb(36, 33, 33);
+        width: 100%;
+        height: 110vh;
+    }
+    
+    .titulo
+    {
+        height: auto; /* Ou defina uma altura maior, como 15% ou 20% */
+    }
+    
+    .titulo p
+    {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 5rem;
+        margin-left: 10vh;
+    }
+    
+    .conteudoSobre {
+        margin-top: 5vh;
+        margin-left: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 75vh;
+        padding: 10px; /* Adicione um preenchimento para manter uma margem interna */
+        box-sizing: border-box; /* Garante que o preenchimento não afete a largura total */
+    }
+    
+    .texto1 {
+        position: relative;
+        top: 0; 
+        left: 0; 
+        width: 80vh;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .texto1 p
+    {
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.25rem;
+        text-align: left;
+        margin: 0; 
+    }
+    
+    .conteudoSobre2 {
+        position: relative;
+        top: 0; 
+        left: 0vh; 
+        width: 80vh;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .texto2
+    {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .texto2 p
+    {
+        color: rgba(170, 170, 170, 0.623);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 0; 
+    }
+    
+    .imagemSobre
+    {
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imagemSobre img {
+        height: 100%;
+        width: 60%;
+    }
+    
+    .carousel-container {
+        width: 80%;
+        height: 95%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .carousel-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        transition: transform 1.25s ease-in-out;
+      }
+      
+      .carousel-slide {
+        height: 95%;
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      
+      .carousel-slide img {
+        width: 50%;
+        height: auto;
+      }
+      
+      .carousel-btn {
+        position: absolute;
+        transform: translateY(-50%);
+        font-size: 2.2rem;
+        background: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #prevBtn {
+        left: 1rem;
+      }
+      
+      #nextBtn {
+        right: 1rem;
+      }
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    .produtos
+    {
+        margin-top: 0px;
+        background-color: rgb(36, 33, 33);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+          flex-direction: column;
+          align-items: center;
+    }
+    
+    .tituloProdutos
+    {
     width: 100%;
-    height: 100vh;
+    height: 10%;
+    padding-top: 10vh;
+    }
+    
+    .tituloProdutos p
+    {
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 5rem;
+        margin-left: 10vh;
+    }
+
+    .subtituloProduto{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+
+    .subtituloProduto p{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+    
+    #catalog {
+        margin-top: 2vh;
+        width: 120vh;
+        height: 75vh;
+      }
+    
+    .produtosCatalog{
+        margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Aldrich", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+    
+    .image-container img {
+        width: 50vh;
+        height: 50vh;
+        cursor: pointer;
+        transition: transform 0.3s, opacity 0.3s; 
+        opacity: 1; 
+      }
+      
+      .image-container img:not(.selected):hover {
+        transform: scale(1.1);
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0.1; 
+      }
+      
+      .image-container {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .image-container::after {
+        content: "Clique aqui para acessar nosso catálogo";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; 
+        font-size: 1.2rem; 
+        font-weight: bold; 
+        text-align: center; 
+        opacity: 0; 
+        transition: opacity 0.3s; 
+        pointer-events: none; /* Evita que a pseudo-classe afete interações */
+      }
+      
+      .image-container:hover::after {
+        opacity: 1; 
+      }
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      .contato
+    {
+        margin-top: 0px;
+        background-color: rgb(36, 33, 33);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+          flex-direction: column;
+          align-items: center;
+    }
+    
+    .tituloContato
+    {
+    width: 100%;
+    height: 10%;
+    padding-top: 10vh;
+    }
+    
+    .tituloContato p
+    {
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 5rem;
+        margin-left: 10vh;
+    }
+    
+    .informacoes{
+        margin-top: 10vh;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+    
+        justify-content: space-around;
+    }
+    
+    .mapa {
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .imagemMapa {
+        width: 50%;
+        height: 50%;
+        opacity: 0.4;
+    }
+    
+    .textoMapa {
+        margin-top: -4vh;
+        width: 70%;
+        height: 50%;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.7rem;
+        color: white;
+    }
+    
+    .textoMapa a {
+        color: white;
+        text-decoration: underline; 
+    }
+    
+    .funcionamento{
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .imagemFuncionamento {
+        width: 50%;
+        height: 50%;
+        opacity: 0.4;
+    }
+    
+    .textoFuncionamento {
+        margin-top: -4vh;
+        width: 70%;
+        height: 50%;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.7rem;
+        color: white;
+    }
+    
+    .telefone{
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .imagemTelefone {
+        width: 50%;
+        height: 50%;
+        opacity: 0.4;
+    }
+    
+    .textoTelefone {
+        margin-top: -4vh;
+        width: 70%;
+        height: 50%;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.7rem;
+        color: white;
+    }
+  }
+
+
+/* _______________________________________________________________TELA DE NOTEBOOK_______________________________________________________________ */
+
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    header {
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 1.7vh;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1vh;
+        z-index: 2; 
+    }
+    
+    
+    nav a {
+        -webkit-text-stroke: 0.2px #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        float: left;
+        display: block;
+        color: rgb(153, 180, 229);
+        text-align: center;
+        padding: 2vh 6.5vh;
+        text-decoration: none;
+        transition: transform 0.3s; 
+        font-size: 2.3vh;
+    }
+    
+    nav a:hover {
+        transform: scale(1.3); 
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .inicial {
+        position: relative;
+        height: 100vh;
+        background-color: rgb(36, 33, 33);
+        margin: 0vh;
+        padding: 0vh;
+    }
+    
+    .fundo {
+        position: relative;
+    }
+    
+    .imagem {
+        height: 80vh;
+    }
+    
+    .imagem img {
+        width: 90%;
+        height: 80vh;
+        object-fit: cover; 
+        clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%);
+    }
+    
+    .slogan {
+        position: absolute;
+        top: 45vh;
+        left: 45vh;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+    }
+    
+    
+    .slogan1 p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        color: rgb(97, 114, 146);
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        font-family: "Aldrich", sans-serif;
+        font-style: normal;
+        font-size: 6.5vh;
+    }
+    
+    .slogan2 p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        color: #fff;
+        color: rgb(153, 180, 229);
+        padding-top: 0px;
+        margin-top: 0px;
+        font-family: "Aldrich", sans-serif;
+        font-size: 9vh;
+    }
+    
+    
+    
+    
+    
+    .sobre
+    {
+        margin-top: 0px;
+        background-color: rgb(36, 33, 33);
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .titulo
+    {
+    height: 10%;
+    margin-top: 0px;
+    padding-top: 0px;
+    border: 1px solid rgb(36, 33, 33);
+    }
+    
+    .titulo p
+    {
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 4rem;
+        margin-left: 10vh;
+    }
+    
+    .conteudoSobre {
+        margin-top: 10vh;
+        margin-left: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 75vh;
+        padding: 10px; /* Adicione um preenchimento para manter uma margem interna */
+        box-sizing: border-box; /* Garante que o preenchimento não afete a largura total */
+    }
+    
+    .texto1 {
+        position: relative;
+        top: 0; 
+        left: 0; 
+        width: 80vh;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .texto1 p
+    {
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.25rem;
+        text-align: left;
+        margin: 0; 
+    }
+    
+    .conteudoSobre2 {
+        position: relative;
+        top: 0; 
+        left: 0vh; 
+        width: 80vh;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .texto2
+    {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .texto2 p
+    {
+        color: rgba(170, 170, 170, 0.623);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.25rem;
+        text-align: center;
+        margin: 0; 
+    }
+    
+    .imagemSobre
+    {
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imagemSobre img {
+        height: 100%;
+        width: 60%;
+    }
+    
+    .carousel-container {
+        width: 80%;
+        height: 95%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .carousel-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        transition: transform 1.25s ease-in-out;
+      }
+      
+      .carousel-slide {
+        height: 95%;
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      
+      .carousel-slide img {
+        width: 50%;
+        height: auto;
+      }
+      
+      .carousel-btn {
+        position: absolute;
+        transform: translateY(-50%);
+        font-size: 2.2rem;
+        background: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #prevBtn {
+        left: 1rem;
+      }
+      
+      #nextBtn {
+        right: 1rem;
+      }
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    .produtos
+    {
+        margin-top: 0px;
+        background-color: rgb(36, 33, 33);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+          flex-direction: column;
+          align-items: center;
+    }
+    
+    .tituloProdutos
+    {
+    width: 100%;
+    height: 10%;
+    padding-top: 10vh;
+    }
+    
+    .tituloProdutos p
+    {
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 4rem;
+        margin-left: 10vh;
+    }
+    
+    #catalog {
+        margin-top: 2vh;
+        width: 100vh;
+        height: 75vh;
+      }
+    
+    .produtosCatalog{
+        margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Aldrich", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+    
+    .image-container img {
+        width: 45vh;
+        height: 45vh;
+        cursor: pointer;
+        transition: transform 0.3s, opacity 0.3s; 
+        opacity: 1; 
+      }
+      
+      .image-container img:not(.selected):hover {
+        transform: scale(1.1);
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0.1; 
+      }
+      
+      .image-container {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .image-container::after {
+        content: "Clique aqui para acessar nosso catálogo";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; 
+        font-size: 1.2rem; 
+        font-weight: bold; 
+        text-align: center; 
+        opacity: 0; 
+        transition: opacity 0.3s; 
+        pointer-events: none; /* Evita que a pseudo-classe afete interações */
+      }
+      
+      .image-container:hover::after {
+        opacity: 1; 
+      }
+
+        .contato
+    {
+        margin-top: 0px;
+        background-color: rgb(36, 33, 33);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+          flex-direction: column;
+          align-items: center;
+    }
+    
+    .tituloContato
+    {
+    width: 100%;
+    height: 10%;
+    padding-top: 10vh;
+    }
+    
+    .tituloContato p
+    {
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 5rem;
+        margin-left: 10vh;
+    }
+    
+    .informacoes{
+        margin-top: 10vh;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+    
+        justify-content: space-around;
+    }
+    
+    .mapa {
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .imagemMapa {
+        width: 50%;
+        height: 50%;
+        opacity: 0.4;
+    }
+    
+    .textoMapa {
+        margin-top: -4vh;
+        width: 70%;
+        height: 50%;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .textoMapa a {
+        color: white;
+        text-decoration: underline; 
+    }
+    
+    .funcionamento{
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .imagemFuncionamento {
+        width: 50%;
+        height: 50%;
+        opacity: 0.4;
+    }
+    
+    .textoFuncionamento {
+        margin-top: -4vh;
+        width: 70%;
+        height: 50%;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .telefone{
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .imagemTelefone {
+        width: 50%;
+        height: 50%;
+        opacity: 0.4;
+    }
+    
+    .textoTelefone {
+        margin-top: -4vh;
+        width: 70%;
+        height: 50%;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+} 
+
+/* _______________________________________________________________TELA DE Tablet_______________________________________________________________ */
+
+@media (min-width: 451px) and (max-width: 991px) {
+    header {
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 1.7vh;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1vh;
+        z-index: 2; 
+    }
+    
+    
+    nav a {
+        -webkit-text-stroke: 0.2px #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        float: left;
+        display: block;
+        color: rgb(153, 180, 229);
+        text-align: center;
+        padding: 2vh 6.5vh;
+        text-decoration: none;
+        transition: transform 0.3s; 
+        font-size: 2.0vh;
+    }
+    
+    nav a:hover {
+        transform: scale(1.3); 
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .inicial {
+        position: relative;
+        height: 100vh;
+        background-color: rgb(36, 33, 33);
+        margin: 0vh;
+        padding: 0vh;
+    }
+    
+    .fundo {
+        position: relative;
+    }
+    
+    .imagem {
+        height: 80vh;
+    }
+    
+    .imagem img {
+        width: 90%;
+        height: 75vh;
+        object-fit: cover; 
+        clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 0% 100%);
+    }
+    
+    .slogan {
+        position: absolute;
+        top: 45vh;
+        left: 45vh;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+    }
+    
+    
+    .slogan1 p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        color: rgb(97, 114, 146);
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        font-family: "Aldrich", sans-serif;
+        font-style: normal;
+        font-size: 6.5vh;
+    }
+    
+    .slogan2 p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        color: #fff;
+        color: rgb(153, 180, 229);
+        padding-top: 0px;
+        margin-top: 0px;
+        font-family: "Aldrich", sans-serif;
+        font-size: 9vh;
+    }
+    
+    
+    
+    
+    
+    .sobre
+    {
+        margin-top: 0px;
+        background-color: rgb(36, 33, 33);
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .titulo
+    {
+    height: 10%;
+    margin-top: 0px;
+    padding-top: 0px;
+    border: 1px solid rgb(36, 33, 33);
+    }
+    
+    .titulo p
+    {
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 4rem;
+        margin-left: 10vh;
+    }
+    
+    .conteudoSobre {
+        margin-top: 10vh;
+        margin-left: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 75vh;
+        padding: 10px; /* Adicione um preenchimento para manter uma margem interna */
+        box-sizing: border-box; /* Garante que o preenchimento não afete a largura total */
+    }
+    
+    .texto1 {
+        position: relative;
+        top: 0; 
+        left: 0; 
+        width: 80vh;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .texto1 p
+    {
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+        text-align: left;
+        margin: 0; 
+    }
+    
+    .conteudoSobre2 {
+        position: relative;
+        top: 0; 
+        left: 0vh; 
+        width: 80vh;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .texto2
+    {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .texto2 p
+    {
+        color: rgba(170, 170, 170, 0.623);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0; 
+    }
+    
+    .imagemSobre
+    {
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imagemSobre img {
+        height: 100%;
+        width: 60%;
+    }
+    
+    .carousel-container {
+        width: 80%;
+        height: 95%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .carousel-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        transition: transform 1.25s ease-in-out;
+      }
+      
+      .carousel-slide {
+        height: 95%;
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      
+      .carousel-slide img {
+        width: 50%;
+        height: auto;
+      }
+      
+      .carousel-btn {
+        position: absolute;
+        transform: translateY(-50%);
+        font-size: 2.2rem;
+        background: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #prevBtn {
+        left: 1rem;
+      }
+      
+      #nextBtn {
+        right: 1rem;
+      }
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    .produtos
+    {
+        margin-top: 0px;
+        background-color: rgb(36, 33, 33);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+          flex-direction: column;
+          align-items: center;
+    }
+    
+    .tituloProdutos
+    {
+    width: 100%;
+    height: 10%;
+    padding-top: 10vh;
+    }
+    
+    .tituloProdutos p
+    {
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 4rem;
+        margin-left: 10vh;
+    }
+    
+    #catalog {
+        margin-top: 2vh;
+        width: 100vh;
+        height: 75vh;
+      }
+    
+    .produtosCatalog{
+        margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Aldrich", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+    
+    .image-container img {
+        width: 40vh;
+        height: 40vh;
+        cursor: pointer;
+        transition: transform 0.3s, opacity 0.3s; 
+        opacity: 1; 
+      }
+      
+      .image-container img:not(.selected):hover {
+        transform: scale(1.1);
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0.1; 
+      }
+      
+      .image-container {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .image-container::after {
+        content: "Clique aqui para acessar nosso catálogo";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; 
+        font-size: 1.2rem; 
+        font-weight: bold; 
+        text-align: center; 
+        opacity: 0; 
+        transition: opacity 0.3s; 
+        pointer-events: none; /* Evita que a pseudo-classe afete interações */
+      }
+      
+      .image-container:hover::after {
+        opacity: 1; 
+      }
+
+        .contato
+    {
+        margin-top: 0px;
+        background-color: rgb(36, 33, 33);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+          flex-direction: column;
+          align-items: center;
+    }
+    
+    .tituloContato
+    {
+    width: 100%;
+    height: 10%;
+    padding-top: 10vh;
+    }
+    
+    .tituloContato p
+    {
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 5rem;
+        margin-left: 10vh;
+    }
+    
+    .informacoes{
+        margin-top: 10vh;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+    
+        justify-content: space-around;
+    }
+    
+    .mapa {
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .imagemMapa {
+        width: 50%;
+        height: 50%;
+        opacity: 0.4;
+    }
+    
+    .textoMapa {
+        margin-top: -4vh;
+        width: 70%;
+        height: 50%;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .textoMapa a {
+        color: white;
+        text-decoration: underline; 
+    }
+    
+    .funcionamento{
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .imagemFuncionamento {
+        width: 50%;
+        height: 50%;
+        opacity: 0.4;
+    }
+    
+    .textoFuncionamento {
+        margin-top: -4vh;
+        width: 70%;
+        height: 50%;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .telefone{
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .imagemTelefone {
+        width: 50%;
+        height: 50%;
+        opacity: 0.4;
+    }
+    
+    .textoTelefone {
+        margin-top: -4vh;
+        width: 70%;
+        height: 50%;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+} 
+
+/* _______________________________________________________________TELA DE CELULAR_______________________________________________________________ */
+
+@media (min-width: 320px) and (max-width: 450px) {
+    header {
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 1.7vh;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding: 1vh;
+        z-index: 2; 
+        background-color: #000000;
+    }
+    
+    
+    nav a {
+        -webkit-text-stroke: 0.2px #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        float: left;
+        display: block;
+        color: rgb(153, 180, 229);
+        text-align: center;
+        padding: 1vh 2vh;
+        text-decoration: none;
+        transition: transform 0.3s; 
+        font-size: 1.5vh;
+    }
+    
+    nav a:hover {
+        transform: scale(1.3); 
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .inicial {
+        position: relative;
+        height: 100vh;
+        background-color: rgb(36, 33, 33);
+        margin: 0vh;
+        padding: 0vh;
+        background: linear-gradient(to top, rgb(36, 33, 33), #2715c7, #000000);
+        overflow-x: hidden;
+    }
+    
+    .fundo {
+        position: relative;
+    }
+    
+    
+    .imagem img {
+        height: 0vh;
+        width: 0%;
+        height: 0vh;
+        object-fit: cover; 
+        opacity: 0;
+    }
+
+    .imagem2
+    {  
+    margin-top: 40vh;
+    width: 99%;
+    height: 30vh;
     display: flex;
-      flex-direction: column;
-      align-items: center;
-}
+    justify-content: center;
+    align-items: center;
+    }
 
-.tituloProdutos
-{
-width: 100%;
-height: 10%;
-padding-top: 10vh;
-border: 1px solid blue;
-}
+    .imagem2 img{
+        width: 100%;
+        height: 125%;
+    }
 
-.tituloProdutos p
-{
-    margin: 0px;
-    color: rgb(255, 255, 255);
-    font-family: "Aldrich", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 70px;
-    margin-left: 10vh;
-}
+    
+    .slogan {
+        position: absolute;
+        top: 30vh;
+        left: 23.25vh;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        width: 80%;
+    }
+    
+    
+    .slogan1 p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        color: rgb(97, 114, 146);
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        font-family: "Aldrich", sans-serif;
+        font-style: normal;
+        font-size: 3vh;
+    }
+    
+    .slogan2 p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        color: #fff;
+        color: rgb(153, 180, 229);
+        padding-top: 0px;
+        margin-top: 0px;
+        font-family: "Aldrich", sans-serif;
+        font-size: 5vh;
+        white-space: nowrap;
+    }
+    
+    
+    
+    
+    
+    .sobre
+    {
+        margin-top: 0px;
+        background-color: rgb(36, 33, 33);
+        width: 100%;
+        height: 120vh;
+        overflow-x: hidden;
+    }
+    
+    .titulo
+    {
+    height: 10%;
+    margin-top: 0px;
+    padding-top: 0px;
+    border: 1px solid rgb(36, 33, 33);
+    }
+    
+    .titulo p
+    {
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 2.5rem;
+        margin-left: 5vh;
+    }
+    
+    .conteudoSobre {
+        margin-top: 1vh;
+        margin-left: 5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 75vh;
+        box-sizing: border-box; /* Garante que o preenchimento não afete a largura total */
+    }
+    
+    .texto1 {
+        position: relative;
+        top: 0; 
+        left: 0; 
+        width: 80vh;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .texto1 p
+    {
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.25rem;
+        text-align: left;
+        margin: 0; 
+    }
+    
+    .conteudoSobre2 {
+        position: relative;
+        top: 0; 
+        left: 0vh; 
+        height: 65vh;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        padding: 10px; /* Adicione um preenchimento para manter uma margem interna */
+    }
+    
+    .texto2
+    {
+        margin-top: 6.5vh;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .texto2 p
+    {
+        text-shadow: 0.5px 0.5px 0.5px #ffffff;
+        color: rgba(170, 170, 170, 0.623);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0; 
+    }
+    
+    .imagemSobre
+    {
+        margin-left: -90%;
+        margin-top: 45vh;
+        width: 150%;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imagemSobre img {
+        height: 100%;
+        width: 60%;
+    }
+    
+    .carousel-container {
+        width: 80%;
+        height: 95%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .carousel-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        transition: transform 1.25s ease-in-out;
+      }
+      
+      .carousel-slide {
+        height: 95%;
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      
+      .carousel-slide img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .carousel-btn {
+        position: absolute;
+        transform: translateY(-50%);
+        font-size: 2.2rem;
+        background: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #prevBtn {
+        left: -11rem;
+      }
+      
+      #nextBtn {
+        right: 2.5rem;
+      }
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    .produtos
+    {
+        margin-top: 0px;
+        background-color: rgb(36, 33, 33);
+        width: 100%;
+        height: 140vh;
+        display: flex;
+          flex-direction: column;
+          align-items: center;
+          overflow: hidden;
+    }
+    
+    .tituloProdutos
+    {
+    width: 100%;
+    height: 10%;
+    padding-top: 10vh;
+    }
+    
+    .tituloProdutos p
+    {
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 2.5rem;
+        margin-left: 5vh;
+    }
 
-#catalog {
-    margin-top: 2vh;
-    border: 1px solid red;
-    width: 85vh;
-    height: 75vh;
-    display: flex;
-    justify-content: space-between;
-  }
+    .subtituloProduto
+    {
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 1.25rem;
+        margin-left: 5vh;
+    }
+    
+    #catalog {
+        margin-left: 8vh;
+        margin-top: 2vh;
+        width: 45vh;
+        height: 75vh;
+      }
+    
+    .produtosCatalog{
+        display: flex;
+        flex-direction: column;
+        font-family: "Aldrich", sans-serif;
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+    
+    .image-container img {
+        width: 40vh;
+        height: 40vh;
+        cursor: pointer;
+        opacity: 1; 
+      }
+      
+      
+      .image-container {
+        margin-top: 20px;
+        position: relative;
+        display: inline-block;
+      }
+      
+      .image-container img::after {
+        content: "Clique aqui para acessar nosso catálogo";
+        position: absolute;
+        color: white; 
+        font-size: 1.2rem; 
+        font-weight: bold; 
+        text-align: center; 
+        opacity: 0; 
+        pointer-events: none; 
+      }
+      
+        .contato
+    {
+        margin-top: 0px;
+        background-color: rgb(36, 33, 33);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+          flex-direction: column;
+          align-items: center;
+          overflow: hidden;
+    }
+    
+    .tituloContato
+    {
+    width: 100%;
+    height: 10%;
+    padding-top: 10vh;
+    }
+    
+    .tituloContato p
+    {
+        margin: 0px;
+        color: rgb(255, 255, 255);
+        font-family: "Aldrich", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 2.5rem;
+        margin-left: 5vh;
+    }
+    
+    .informacoes{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    
+    .mapa {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .imagemMapa {
+        width: 50%;
+        height: 50%;
+        opacity: 0.7;
+    }
+    
+    .textoMapa {
+        width: 70%;
+        height: 50%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 
-  .image-container {
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
+    .textoMapa p{
+        margin-top: -1.5vh;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.25rem;
+        color: white;
+    }
 
-  .image-container.selected {
-    pointer-events: none; 
-    transform: scale(1.3);
-  }
+    .textoMapa a {
+        color: white;
+        text-decoration: underline; 
+        margin-top: -1.5vh;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    
+    .funcionamento{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .imagemFuncionamento {
+        width: 50%;
+        height: 50%;
+        opacity: 0.4;
+    }
+    
+    .textoFuncionamento {
+        margin-top: -4vh;
+        width: 70%;
+        height: 50%;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .telefone{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .imagemTelefone {
+        width: 50%;
+        height: 50%;
+        opacity: 0.4;
+    }
+    
+    .textoTelefone {
+        margin-top: -4vh;
+        width: 70%;
+        height: 50%;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
 
-  .image-container:not(.selected):hover {
-    transform: scale(1.1);
-  }
+    .textoTelefone p{
+        margin-top: 3vh;
+        font-family: "Aldrich", sans-serif;
+        text-align: center;
+        font-size: 1.25rem;
+        color: white;
+    }
+} 
