@@ -40,3 +40,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var linksMenu = document.querySelectorAll('nav a');
+
+    linksMenu.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            var alvo = this.getAttribute('href').substring(1);
+            var secaoAlvo = document.getElementById(alvo);
+            
+            if (secaoAlvo) {
+                var posicao = secaoAlvo.getBoundingClientRect().top + window.pageYOffset;
+
+                window.scrollTo({
+                    top: posicao,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+
+
